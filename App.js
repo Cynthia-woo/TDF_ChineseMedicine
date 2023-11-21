@@ -1,55 +1,102 @@
-/*
-Node + Express Example code for CS160 Summer 2022
-Prepared by Shm Garanganao Almeda 
-
-Code referenced from: 
-https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module"
-https://expressjs.com/en/starter/hello-world.html
-https://codeforgeek.com/render-html-file-expressjs/
-https://stackoverflow.com/questions/32257736/app-use-express-serve-multiple-html
-
-Photo Credits:
-Bunny by Satyabratasm on Unsplash <https://unsplash.com/photos/u_kMWN-BWyU>
-*/
-
-//Node modules to *require*
-//if these cause errors, be sure you've installed them, ex: 'npm install express'
 const express = require('express');
-const router = express.Router();
 const app = express();
 const path = require('path');
+const axios = require('axios');
 
-//specify that we want to run our website on 'http://localhost:8000/'
+const bodyParser = require('body-parser');// parse json
+app.use(bodyParser.json());
+
+//website to run code: 'http://localhost:8000/'
 const host = 'localhost';
 const port = 8000;
 
-var publicPath = path.join(__dirname, 'public'); //get the path to use our "public" folder where we stored our html, css, images, etc
-app.use(express.static(publicPath));  //tell express to use that folder
+var publicPath = path.join(__dirname, 'public'); //get the path to use our "public" folder storing our html, css, images, etc
+app.use(express.static(publicPath));
 
+//express-router
+// const router = express.Router();
 
-
-//here's where we specify what to send to users that connect to our web server...
+//web server url
 //if there's no url extension, it will show "index.html"
-router.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "/"));
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));//default "/" means "index.html"
 });
 
-//depending on what url extension the user navigates to, send them the respective html file. 
-app.get('/a', function (req, res) {
-    res.sendFile(publicPath + '/a.html');
-});
-app.get('/b', function (req, res) {
-    res.sendFile(publicPath + '/b.html');
-});
-app.get('/c', function (req, res) {
-    res.sendFile(publicPath + '/c.html');
+// handle APT request
+app.post("/api", async(req, res) => {
+    try {
+        const inputText = req.body.inputText;
+        const user_id = req.body.user_id; // Optional user_id
+        const session_id = req.body.session_id; // Optional session_id
+        const stateful = req.body.stateful; // Optional stateful flag
+
+        const apiResponse = await callZeroWidthAPI(inputText, user_id, session_id, stateful);
+        // console.log('apiResponse', apiResponse);
+
+        if (apiResponse && apiResponse.output_data && apiResponse.output_data.content) {
+            const responseText = apiResponse.output_data.content;
+            res.json({ response: responseText });
+        } else {
+            console.error('Invalid API Response Format:', apiResponse);
+            res.status(500).json({ error: 'Invalid API response format' });
+        }
+
+    } catch (error) {
+        console.log('Error in API request', error);
+        res.status(500).json({ error: error.message});
+    }
 });
 
+const callZeroWidthAPI = async (inputText, user_id, session_id, stateful) => {
+    const apiUrl = "https://api.zerowidth.ai/process/NFkuStb1R0pe33kgs3IW/nFDVr95RfczyBCTiiOcu";
+    const apiKey = "Bearer sk0w-8801efb57d18337bd57e8866f208052d";
+    const reqBody = {
+        data: {
+            messages: [
+                {
+                    content: inputText,
+                    role: "user",
+                },
+            ],
+            // variables:{
+            //     "AGE_OF_USER":""
+            // },
+        },
+        user_id: user_id, // Optional user_id
+        session_id: session_id, // Optional session_id
+        stateful: stateful || false, // Optional stateful flag (default to false)
+    };
 
-//run this server by entering "node App.js" using your command line. 
-   app.listen(port, () => {
-     console.log(`Server is running on http://${host}:${port}`);
-   });
+    try {
+        console.log('Making API Request:', apiUrl, reqBody);
+        const response = await axios.post(apiUrl, reqBody, {
+            headers: {
+                Authorization: apiKey,
+                'Content-Type': 'application/json', // Include Content-Type header
+            },
+        });
+        console.log('API Response:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('API Error:', error.message);
+        return "API Error";
+    }
+}
 
+//
+// app.get('/a', function (req, res) {
+//     res.sendFile(publicPath + '/a.html');
+// });
+// app.get('/b', function (req, res) {
+//     res.sendFile(publicPath + '/b.html');
+// });
+// app.get('/c', function (req, res) {
+//     res.sendFile(publicPath + '/c.html');
+// });
+
+//run the server: "node App.js"
+app.listen(port, () => {
+    console.log(`Server is hosting on http://${host}:${port}`);
+})
 
 

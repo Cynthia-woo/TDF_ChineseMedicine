@@ -1,36 +1,56 @@
-<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>HerbaChatec</title>
 </head>
 
 <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
-<body style="font-family:Verdana;">
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World</h1>
-</div>
+<body id="main-body" style="font-family: Verdana,serif;">
+  <!--    <a href="/a">Normal Rabbit</a>-->
+  <div id="apiResponse"></div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/a">Normal Rabbit</a>
-    <a href="/b">Gray Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
-  </div>
-
-  <div class="main">
-    <h2>Why are these colors so ugly?</h2>
-    <p>Sure makes you feel motivated to pick a better color-scheme for yourself instead of sticking with these ugly default colors, huh? >:)</p>
-  </div>
-
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
-  </div>
-</div>
-
+  <input id="userInput" type="text" placeholder="Ask everything here">
+  <button id="apiCall" type="submit" onclick="callAPI()">Submit</button>
 
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/app.js"></script>
+
+<script>
+  const callAPI = async() => {
+    console.log("API call");
+    const inputText = document.getElementById('userInput').value;
+    const responseDiv = document.getElementById('apiResponse');
+    try {
+      const response = await fetch('/api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({inputText})
+      });
+
+      console.log('callAPI response', response);
+      if (response.ok) {
+        const data = await response.json();
+        console.log('callAPI data', data);
+        responseDiv.innerText = data.response;
+        document.getElementById('userInput').value = "";
+      } else {
+        console.log('callAPI Error:', response.status);
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+  </script>
+
 </html>
 
