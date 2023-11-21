@@ -9,7 +9,6 @@
   <title>HerbaChatec</title>
 </head>
 
-<!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
 <body id="main-body" style="font-family: Verdana,serif;">
   <!--    <a href="/a">Normal Rabbit</a>-->
   <div id="apiResponse"></div>
@@ -18,7 +17,6 @@
   <button id="apiCall" type="submit" onclick="callAPI()">Submit</button>
 
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/app.js"></script>
@@ -36,7 +34,6 @@
         },
         body: JSON.stringify({inputText})
       });
-
       console.log('callAPI response', response);
       if (response.ok) {
         const data = await response.json();
@@ -51,6 +48,4 @@
     }
   }
   </script>
-
 </html>
-
