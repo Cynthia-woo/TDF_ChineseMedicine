@@ -22,7 +22,7 @@
         res.sendFile(path.join(__dirname, "/"));//default "/" means "index.html"
      });
     //handle APT request
-    router.post("/api", async(req,res) => {
+    app.post("/api", async(req,res) => {
         try{
             const inputText = req.body.inputText;
             const user_id = req.body.user_id; // Optional user_id
@@ -44,23 +44,27 @@
     });
 
     const callZeroWidthAPI = async (inputText, user_id, session_id, stateful) => {
-        const apiUrl = "https://api.zerowidth.ai/process/NFkuStb1R0pe33kgs3IW/nFDVr95RfczyBCTiiOcu";
+        const apiUrl = "https://api.zerowidth.ai/process/NFkuStb1R0pe33kgs3IW/nFDVr95RfczyBCTiiOcu?verbose=true";
         const apiKey = "Bearer sk0w-8801efb57d18337bd57e8866f208052d";
+        const messagesArray = [];
+        // messagesArray.push({
+        //     content: 'i got a stomachache',
+        //     role: "user",
+        // })
+        messagesArray.push({
+            content: inputText,
+            role: "user",
+        })
         const reqBody = {
             data: {
-                messages: [
-                    {
-                        content: inputText,
-                        role: "user",
-                    },
-                ],
+                messages: messagesArray,
                 variables:{
                     "AGE_OF_USER":""
                 },
             },
             user_id: user_id, // Optional user_id
             session_id: session_id, // Optional session_id
-            stateful: stateful || false, // Optional stateful flag (default to false)
+            stateful: stateful || true, // Optional stateful flag (default to false)
         };
 
         try {

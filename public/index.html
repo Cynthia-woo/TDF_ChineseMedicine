@@ -1,52 +1,95 @@
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <title>HerbaChatec</title>
-  </head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <title>HerbaChatec</title>
+</head>
 
-  <body id="main-body" style="font-family: Verdana,serif;">
-    <!--    <a href="/a">Normal Rabbit</a>-->
-    <div id="apiResponse"></div>
+<body>
+<header>
+  <div class="header_title"><a href="/">HerbaChatec</a></div>
+</header>
 
-    <input id="userInput" type="text" placeholder="Ask everything here">
-    <button id="apiCall" type="submit" onclick="callAPI()">Submit</button>
+<div class="response_container">
+  <div id="response_content">
+    <div class='server_output'>
+      <div class="server_output_content">Hello! How can I assist you with Chinese medicinal recipes today?</div>
+    </div>
+<!--    <div class='user_input'>-->
+<!--      <div class="user_input_content">Thanks</div>-->
+<!--    </div>-->
 
-  </body>
+  </div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/app.js"></script>
+<footer>
+  <div class="input_content" onkeydown="handleKeyDown(event)">
+    <input id="userInput" type="text" placeholder="Ask everything here"/>
+    <button id="userInput_button" type="submit" onclick="callAPI()" >Submit</button>
+  </div>
+</footer>
+</body>
 
-  <script>
-    const callAPI = async() => {
-      console.log("API call");
-      const inputText = document.getElementById('userInput').value;
-      const responseDiv = document.getElementById('apiResponse');
-      try {
-        const response = await fetch('/api', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({inputText})
-        });
-        console.log('callAPI response', response);
-        if (response.ok) {
-          const data = await response.json();
-          console.log('callAPI data', data);
-          responseDiv.innerText = data.response;
-          document.getElementById('userInput').value = "";
-        } else {
-          console.log('callAPI Error:', response.status);
-        }
-      } catch (error) {
-        console.log('Error:', error);
-      }
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/app.js"></script>
+
+<script>
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      console.log("Keyboard submit");
+      callAPI();
     }
-    </script>
-  </html>
+  }
+  const callAPI = async() => {
+    console.log("API call");
+    const inputText = document.getElementById('userInput').value;
+    const responseDiv = document.getElementById('response_content');
+    if (!inputText) return;// in case user don't submit anything
+    try {
+      const response = await fetch('/api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({inputText})
+      });
+      console.log('callAPI response', response);
+      if (response.ok) {
+        const data = await response.json();
+        console.log('callAPI data', data);
+        // responseDiv.innerText = data.response;
+        responseDiv.innerHTML += `<div class='user_input'><div class="user_input_content">${inputText}</div></div>`;
+        responseDiv.innerHTML += `<div class='server_output'><div class="server_output_content">${data.response}</div></div>`;
+        document.getElementById('userInput').value = "";
+        const scrollingContainer = document.getElementById('response_content');
+        scrollingContainer.scrollTop = scrollingContainer.scrollHeight;
+      } else {
+        console.log('callAPI Error:', response.status);
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+
+  // // get div need to scroll down
+  // const scrollingContainer = document.getElementById('response_container');
+  //
+  // // change process
+  // const simulateContentChange = () => {
+  //   const newContent = document.createElement('div');
+  //   newContent.textContent = 'New content added';
+  //   scrollingContainer.appendChild(newContent);
+  //
+  //   // scroll down
+  //   scrollingContainer.scrollTop = scrollingContainer.scrollHeight;
+  // }
+  //
+  // // changing
+  // setInterval(simulateContentChange, 2000);
+</script>
+</html>

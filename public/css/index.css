@@ -1,0 +1,101 @@
+
+
+*, body {
+    margin: 0;
+    font-family: Verdana,serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #323232;
+}
+button, input {
+    border:none;
+    background-color: #fff;
+}
+
+
+/* Media query for screens with a width of 375px or more */
+@media (min-width: 375px) {
+    header {
+        height: 10vh;
+        width: 100vw;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header_title {
+
+    }
+
+    .response_container {
+        height: 80vh;
+        background-color: #efefef;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .response_content {
+        padding-bottom:30px;
+        overflow-y: auto;
+    }
+
+    .user_input, .server_output {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .user_input_content, .server_output_content {
+        background-color: #fff;
+        /*height: 50px;*/
+        max-width: 80%;
+        border-radius: 20px 20px 20px 0;
+        padding: 20px;
+        margin: 10px 15px;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .user_input {
+        align-items: flex-end;
+    }
+
+    .user_input_content {
+        background-color: #229f22;
+        text-align: right;
+        color: white;
+        border-radius: 20px 20px 0 20px;
+    }
+
+    footer {
+        height: 10vh;
+        background-color: rgba(255, 255, 255, 0.52);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #userInput {
+        display: inline-block;
+        width: 60vw;
+        height: 50px;
+        max-height: 10vh;
+    }
+
+    #userInput:active {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        border-color: #888888;
+
+    }
+
+    #userInput_button {
+        display: inline-block;
+        height: 20px;
+    }
+}
