@@ -2,7 +2,7 @@
   "recipes": [
     {
       "id": 1,
-      "name": "枸杞桂圆鸽蛋 (Goji, Longan, and Pigeon Egg Congee)",
+      "name": "Goji, Longan, and Pigeon Egg Congee",
       "composition": "Pigeon eggs 5, longan flesh 10g, goji berries 10g, rock sugar 25g.",
       "preparation_method": "Boil pigeon eggs, peel, and place in a bowl with longan, goji berries, and rock sugar. Stew over low heat until cooked.",
       "efficacy": "Tonifies kidneys, nourishes Qi, nourishes Yin, and enriches blood.",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "name": "红焖鹌鹑 (Braised Quail)",
+      "name": "Braised Quail",
       "composition": "Quail 10, soaked shiitake mushrooms 60g, hen meat 100g, pork belly 250g, baby bok choy 10, spring onion, ginger, Shaoxing wine, sugar, soy sauce, lard, chicken broth, cornstarch, MSG, white pepper, all as needed.",
       "preparation_method": "(1) Prepare quail, mushrooms, bamboo shoots, pork belly, and chicken meat. (2) Sauté pork and chicken, add mushrooms, bamboo shoots, spring onion, and ginger. Add chicken broth, soy sauce, Shaoxing wine, salt, white pepper, sugar, MSG. Add quail, simmer until tender. Thicken the sauce, pour over quail, and serve with blanched baby bok choy.",
       "efficacy": "Tonifies the middle, strengthens Qi, and strengthens the waist and kidneys.",
@@ -20,26 +20,25 @@
     },
     {
       "id": 3,
-      "name": "人参银耳鸽蛋汤 (Ginseng, Tremella, and Pigeon Egg Soup)",
+      "name": "Ginseng, Tremella, and Pigeon Egg Soup",
       "composition": "Ginseng powder 2-4g, Tremella 20g, soaked shiitake mushrooms 15g, pigeon eggs 15g, lean pork 30g, chicken broth, salt, chicken oil, all as needed.",
       "preparation_method": "Steam Tremella, place in a bowl with pigeon eggs, pork, and mushrooms. Cook chicken broth, add salt, cook Tremella until soft, add chicken oil and ginseng powder. Pour over the steamed ingredients.",
       "efficacy": "Tonifies Qi and blood, nourishes Yin and Yang.",
       "health_care_application": "Suitable for those with post-illness weakness.",
-      "image": "https://k.sinaimg.cn/n/sinacn20190824ac/249/w600h449/20190824/e5c0-icqznha5162929.jpg/w700d1q75cms.jpg"
+      "image": "https://crazykoreancooking.com/wp-content/uploads/2022/12/Screenshot-2022-12-07-at-11.17.03-PM-Edited.png"
     },
     {
       "id": 4,
-      "name": "莲藕猪脊骨汤 (Lotus Root, Pork Backbone, and Chinese Yam Soup)",
+      "name": "Lotus Root, Pork Backbone, and Chinese Yam Soup",
       "composition": "Lotus root 400g, Poria 10g, Codonopsis 8-10g, Radix Rehmanniae Preparata 8g, White Peony Root 8g, Atractylodes 12g, Ligusticum 5g, pork backbone 600g, soy sauce, sesame oil, MSG, salt, all as needed.",
       "preparation_method": "Peel and wash lotus root, cut into pieces. Cut pork backbone into sections. Wrap herbs in clean gauze, simmer in boiling water. Add salt for taste. Serve as a meal accompaniment.",
       "efficacy": "Tonifies Qi and blood, nourishes the skin, eliminates various ailments, promotes longevity.",
       "health_care_application": "Suitable for those with Qi and blood deficiency, pale complexion, and lean physique.",
       "image": "https://i8.meishichina.com/attachment/recipe/2018/08/18/20180818153458313145210878013.jpg?x-oss-process=style/p800"
-
     },
     {
       "id": 5,
-      "name": "瘦肉章鱼西菜汤 (Lean Pork, Octopus, and Watercress Soup)",
+      "name": "Lean Pork, Octopus, and Watercress Soup",
       "composition": "Watercress 1.5kg, dried octopus 50g, lean pork 500g, honey dates 3, MSG 4g, salt 7g, water 3kg.",
       "preparation_method": "Wash watercress, remove tough stems. Clean octopus and remove the thin membrane. Wash pork, cut into pieces. Boil water, add octopus and watercress. When boiling, add pork and honey dates. Simmer for 90 minutes, season with salt and MSG.",
       "efficacy": "Tonifies Qi and blood, nourishes essence.",
@@ -48,13 +47,318 @@
     },
     {
       "id": 6,
-      "name": "花旗参滋补汤 (American Ginseng and Fish Soup)",
+      "name": "American Ginseng and Fish Soup",
       "composition": "American ginseng 10g, red dates 40g, Chinese yam 25g, coix seed 25g, tangerine peel 5g, live crucian carp 300g, cooking wine, salt, MSG, pepper, ginger, fresh soup, all as needed.",
       "preparation_method": "Scale and gut the carp, marinate with wine, salt, and ginger. Put all ingredients in boiling soup, simmer on low heat for about 2 hours. Season with pepper, MSG, and salt before serving.",
       "efficacy": "Tonifies Qi and blood, nourishes the liver and kidneys.",
       "health_care_application": "Consumed with fish, suitable for those with Qi and blood deficiency.",
-      "image": "https://imgcache.dealmoon.com/fsvrugccache.dealmoon.com/ugc/950/aa1/df2/9024a8cc0a84505e4d9881a.jpg_1280_1280_3_8d41.jpg"
-
+      "image": "https://burpple-3.imgix.net/foods/2f1652c213719b6f30821925509_original."
+    },
+    {
+      "id": 7,
+      "name": "Ginseng and Seafood Soup",
+      "composition": "Ginseng 10g, dried scallops and cooked pig stomach 30g each, abalone 50g, cleaned winter bamboo shoots 60g, soaked sea cucumber, chicken meat 300g, crab yellow, soaked shiitake mushrooms, dried scallops, and dried shrimp 20g each, pork ribs 200g, seasoning as needed.",
+      "preparation_method": "Steam ginseng, make ginseng wine, and set aside. Cook pig stomach, bamboo shoots, chicken meat, sea cucumber, and ribs in a pot. Stew until tender, then add abalone, crab yellow, ginseng wine, and ginseng slices.",
+      "efficacy": "Invigorates the body.",
+      "health_care_application": "Consumed with meals, suitable for the elderly with weakness.",
+      "image": "https://www.kuali.com/wp-content/uploads/2011/01/blackchicken.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Longan and Raisin Soup",
+      "composition": "Raisins and longan meat, each 50g, rock sugar as needed.",
+      "preparation_method": "Wash raisins and longan, add water to the pot, and cook all ingredients for half an hour.",
+      "efficacy": "Tonifies and nourishes Qi and blood, promotes longevity.",
+      "health_care_application": "Drink soup and eat ingredients daily, suitable for those with Qi and blood deficiency and physical weakness.",
+      "image": "https://rasamalaysia.com/wp-content/uploads/2007/04/longan-tong-shu.-ingredienti.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Longan and Black Sesame Blood-Nourishing Soup",
+      "composition": "Longan meat 400g, black sesame seeds 300g, rock sugar 100g.",
+      "preparation_method": "Steam longan meat, sun-dry for about 2 hours, repeating the process five times. Roast and crush black sesame seeds. Mix black sesame powder, longan meat, and rock sugar. Consume 20g each time with boiling water.",
+      "efficacy": "Tonifies Qi and blood, prevents hair loss.",
+      "health_care_application": "Taken twice daily, suitable for those with blood deficiency, pale complexion, cold limbs, and hair loss.",
+      "image": "https://static.wixstatic.com/media/da0dac_db8851f86d344f58a5f49b1db1589ba4~mv2.jpg/v1/fill/w_980,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/da0dac_db8851f86d344f58a5f49b1db1589ba4~mv2.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Codonopsis and Ginseng Eel Soup",
+      "composition": "Codonopsis and dangshen 15g each, eel 500g, cooking wine, green onion, ginger, garlic, MSG, salt, and soy sauce as needed.",
+      "preparation_method": "Clean the eel, remove bones, intestines, head, and tail, cut into shreds. Place codonopsis and dangshen in a muslin bag and tie it tightly. Put the bag in an aluminum pot. Add cooking wine, green onion, ginger, garlic, salt, and water. Boil with strong heat, skim off foam, then simmer over low heat for 1 hour. Remove the medicinal bag, add MSG.",
+      "efficacy": "Tonifies Qi and blood.",
+      "health_care_application": "Consume on an empty stomach, 1-2 times daily, suitable for those with blood deficiency, pale complexion, fatigue, or postpartum blood deficiency.",
+      "image": "https://www.allthingshealth.com/en-my/_next/image/?url=https%3A%2F%2Fallthingshealth.b-cdn.net%2Fen-my%2Fwp-content%2Fuploads%2Fsites%2F2%2F2022%2F09%2FCodonopsis-Soup-1024x623.jpg&w=750&q=75"
+    },
+    {
+      "id": 11,
+      "name": "Black Sesame and Polygonum Multiflorum Porridge",
+      "composition": "Dried Polygonum Multiflorum and black sesame seeds, each 500g, red sugar 300g.",
+      "preparation_method": "Dry Polygonum Multiflorum slices, grind into powder. Roast and crush black sesame seeds. Boil Polygonum Multiflorum powder in water, add sesame powder, red sugar, and simmer into a paste.",
+      "efficacy": "Nourishes the kidneys and darkens hair.",
+      "health_care_application": "Take once in the morning and evening, 100g each time, for 10 days. Suitable for middle-aged men and women with blood deficiency and white hair.",
+      "image": "https://kimchimari.com/wp-content/uploads/2013/01/black_sesame_rice_porridge_heukimja_juk-1024x626.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Milk Strengthening Beverage",
+      "composition": "150g milk, 1 apple, 1 carrot, 30g sugar.",
+      "preparation_method": "Wash and slice the carrot and apple. Place them in a juicer with sugar. Add milk and blend into a juice.",
+      "efficacy": "Nourishes Qi and blood, enhances complexion.",
+      "health_care_application": "Suitable for those with pale complexion and wrinkles caused by Qi and blood deficiency. Drink as desired.",
+      "image": "https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-oat-milk-every-day/intro-1580397460.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Mulberry and Lotus Root Starch Honey",
+      "composition": "Fresh ripe mulberries 150g, lotus root starch, 30g honey, boiling water as needed.",
+      "preparation_method": "Dissolve lotus root starch in a small amount of cool boiling water. Crush the ripe mulberries and filter the juice. Mix mulberry juice, lotus root starch, and honey. Stir until thickened and store in a bottle.",
+      "efficacy": "Nourishes the kidneys, nourishes blood, anti-aging.",
+      "health_care_application": "Take 10g in the morning and evening. Suitable for the weak and aging due to blood deficiency.",
+      "image": "https://i5.walmartimages.com/asr/2ccd6326-4b83-4915-a782-bcaf1abcbf23.a446e8c0ce97d882d3710f35e0279972.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": 14,
+      "name": "Beef Marrow Porridge",
+      "composition": "20g beef marrow, 100g glutinous rice, 15g Rehmannia glutinosa juice, 30g honey, monosodium glutamate, Shaoxing wine, ginger as needed.",
+      "preparation_method": "Pound and extract beef marrow. Cook with Shaoxing wine and ginger until dry. Cook glutinous rice with Rehmannia glutinosa juice, monosodium glutamate, honey.",
+      "efficacy": "Benefits the five organs, invigorates Qi and strength.",
+      "health_care_application": "Thicker in winter, thinner in hot weather. Suitable for those with weak spleen and stomach, poor digestion, muscle atrophy, and thirst.",
+      "image": "https://cdn.sanity.io/images/f3knbc2s/production/fe0a65177e82a54b78e8619c800930fcd54cc55c-1920x1134.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Astragalus Beef Porridge",
+      "composition": "Fresh beef 100g, glutinous rice 100g, astragalus 10g, soybean powder, ginger, green onion, pepper powder, monosodium glutamate, salt, water as needed.",
+      "preparation_method": "Grind fresh beef with ginger, mix with soybean powder, pepper powder, salt, monosodium glutamate. Cook glutinous rice with astragalus water. Add the beef mixture when the rice is almost cooked. Cook until the meat is tender, then add green onions and monosodium glutamate.",
+      "efficacy": "Tonifies Qi and blood, strengthens the spleen and stomach.",
+      "health_care_application": "Eat twice daily. Suitable for those with Qi and blood deficiency.",
+      "image": "https://vinmec-prod.s3.amazonaws.com/images/20190614_105109_496852_chao-bo-bam.max-1800x1800.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Quail and Chinese Yam Congee",
+      "composition": "2 quails, 50g Chinese yam, 100g glutinous rice, ginger, green onions, salt as needed.",
+      "preparation_method": "Remove feathers and internal organs from the quails, wash, debone, and cut into small pieces. Quickly rinse Chinese yam, wash glutinous rice. Place all ingredients in a pot, boil with strong heat, then simmer with gentle heat until the congee is ready. Add ginger, green onions, and a little salt.",
+      "efficacy": "Tonifies Qi and blood, invigorates the spleen and stomach.",
+      "health_care_application": "Consume every other day. Suitable for those who are weak and fatigued.",
+      "image": "https://www.unfamiliarchina.com/assets/images/congee/chinese-yam-congee-with-mung-beans.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Peanut Congee",
+      "composition": "45g peanut rice, 30g Chinese yam, 100g glutinous rice, rock sugar as needed.",
+      "preparation_method": "Crush peanuts and Chinese yam separately, then mix with glutinous rice. Cook as congee, and when ready, add rock sugar to taste.",
+      "efficacy": "Tonifies Qi and blood, invigorates the spleen and moistens the lungs.",
+      "health_care_application": "Consume twice daily. Suitable for those with deficient Qi and blood and weakness.",
+      "image": "https://www.unfamiliarchina.com/images/congee/dried-carp-and-peanut-congee.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Spinach Congee",
+      "composition": "250g spinach, 250g glutinous rice, salt, monosodium glutamate as needed.",
+      "preparation_method": "Wash the spinach, blanch briefly in boiling water, cut into sections. Wash glutinous rice and cook until the rice is ready. Add spinach when the congee is almost done. Continue to simmer until the congee is ready. Add salt and monosodium glutamate to taste.",
+      "efficacy": "Nourishes blood and moisturizes dryness.",
+      "health_care_application": "Consume as desired. Suitable for those with blood deficiency, pale complexion, and thin body.",
+      "image": "https://noobcook.com/wp-content/uploads/2019/09/spinach_pork_porridge-620x465.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Immortal Congee",
+      "composition": "30-60g prepared Polygonum multiflorum, 60g glutinous rice, 3-5 red dates, brown sugar as needed.",
+      "preparation_method": "Extract a strong decoction from prepared Polygonum multiflorum, remove the residue. Cook glutinous rice with the decoction and add red dates. Add brown sugar when the congee is ready. Simmer briefly and consume.",
+      "efficacy": "Nourishes essence and blood, promotes longevity.",
+      "health_care_application": "Consume once a day as desired. Suitable for those with blood deficiency leading to premature graying and sallow complexion.",
+      "image": "https://asianinspirations.com.au/wp-content/uploads/2020/04/00CongeeFeatImg.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Longan and Lotus Seed Congee",
+      "composition": "30g longan meat, 30g lotus seeds, 30-60g glutinous rice, 10 red dates, white sugar as needed.",
+      "preparation_method": "Peel and pit the lotus seeds, remove the pits from the red dates, and cook them with glutinous rice. Add white sugar to taste.",
+      "efficacy": "Tonifies Qi and blood.",
+      "health_care_application": "Can be consumed as a main meal or side dish. Suitable for those with deficient Qi and blood anemia.",
+      "image": "https://images.yamibuy.net/itemdescription/0f2e4443ccf8cb5e36606be48c23ef5c_h300_i3_0x0.webp"
+    },
+    {
+      "id": 21,
+      "name": "Ginseng and Astragalus Congee",
+      "composition": "6g ginseng, 60g astragalus, 100g rice.",
+      "preparation_method": "Grind ginseng into powder, decoct astragalus twice, combine the decoctions. Cook rice in the astragalus decoction, add ginseng powder, and sweeten with sugar.",
+      "efficacy": "Tonifies Qi, strengthens the body, promotes longevity.",
+      "health_care_application": "Consume twice daily, morning and evening. Suitable for those with weak constitution.",
+      "image": "https://andreabeaman.com/wp-content/uploads/2017/12/P1080444-1024x768.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Anti-Aging Sesame Glutinous Rice Balls",
+      "composition": "250g glutinous rice, 150g date paste, 100g white sesame seeds, 100g granulated sugar.",
+      "preparation_method": "Wash sesame seeds, roast until golden, crush and mix with sugar. Steam glutinous rice, mash into a soft dough. Form rice balls with date paste filling, roll in sesame-sugar mixture.",
+      "efficacy": "Nourishes blood, invigorates the stomach, moisturizes the skin, and resists aging.",
+      "health_care_application": "Consume alone or with porridge/sweet soup. Suitable for those weakened by blood deficiency.",
+      "image": "https://www.healthygfasian.com/wp-content/uploads/2023/09/Black-Sesame-Tang-Yuan.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Mushroom Stir-Fried Spinach",
+      "composition": "200g spinach, 10g mushrooms, 3g sesame oil, garlic, green onion, ginger slices, cooking wine, and salt as needed.",
+      "preparation_method": "Clean spinach; cut mushrooms. Stir-fry spinach until cooked, set aside. In the same pan, add garlic, green onion, ginger, cooking wine, and salt. Boil, add mushrooms, stir-fry, and pour over the spinach.",
+      "efficacy": "Iron supplement, spleen nourishment, blood nourishment, and dryness relief.",
+      "health_care_application": "Suitable for regular consumption, beneficial for the general population.",
+      "image": "https://eatwellenjoylife.com/wp-content/uploads/2017/02/Sauteed-Spinach-and-Caramelized-Mushrooms-Final.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Goji Radish Braised Chicken",
+      "composition": "500g chicken, 600g white radish, 15g goji berries, 9g dried tangerine peel, monosodium glutamate, white pepper, Shaoxing wine, ginger, green onion, salt, lard, water starch, and Sichuan peppercorns as needed.",
+      "preparation_method": "Cook chicken, remove bones. Apply royal jelly to the chicken skin. Fry the chicken until red, then steam with other ingredients. Season and thicken the sauce.",
+      "efficacy": "Tonifies the middle energizer, benefits qi, dispels phlegm, and benefits kidneys.",
+      "health_care_application": "Suitable for those with fatigue, weakness, and coughing with abundant phlegm.",
+      "image": "https://asianinspirations.com.au/wp-content/uploads/2018/12/R00922_Braised_Chicken_with_Radish.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Carrot Sauce Lean Pork",
+      "composition": "300g lean pork, 100g carrots, 1 piece of dried tofu, 10 dried scallops, 6g yellow sauce, 50g lard, 6g cornstarch (wet), 3g soy sauce, 3g cooking wine, 3g sesame oil, monosodium glutamate, chopped green onions, chopped ginger, and salt as needed.",
+      "preparation_method": "Cut carrots and dried tofu into small cubes. Cut the pork into small dices. Soak the dried scallops. Fry carrots in lard, then stir-fry pork. Add seasonings and stir-fry. Add carrots, tofu, scallops, and stir. Finish with sesame oil.",
+      "efficacy": "Nourishes blood and qi, promotes longevity.",
+      "health_care_application": "Suitable for those with deficient blood and qi.",
+      "image": "https://www.bhg.com/thmb/NNnMsyAWnXaNy6ErMCM3qdG5qXs=/1244x0/filters:no_upscale():strip_icc()/pan-roasted-pork-tenderloin-RU207464-47c72d43b7704349a46f8cddaa7f68c4.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Braised Pork Ribs",
+      "composition": "100g pork ribs, 5g vegetable oil, soy sauce, and sugar as needed.",
+      "preparation_method": "Wash pork ribs, cut into pieces. Heat oil, stir-fry ribs until brown. Add water, stew until meat is tender. Add soy sauce and sugar, stir until well mixed.",
+      "efficacy": "Blood tonic, nourishes blood.",
+      "health_care_application": "Suitable for those with weak constitution and blood deficiency.",
+      "image": "https://cloudinary-cdn.whisk.com/image/upload/g_auto,c_fill,q_60,f_auto,h_600,w_800/v1636287054/recipe/6ec254209031629a562f3bc24e7ab880.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Royal Jelly Braised Pork Elbow",
+      "composition": "5g royal jelly, 750g pork elbow, 25g starch, 10g scallion, 10g ginger, 50g soy sauce, 25g cilantro, 5g peppercorns, 5g star anise, 1g monosodium glutamate, 25g lard.",
+      "preparation_method": "Boil pork elbow until partially cooked. Apply royal jelly to the skin. Fry in hot oil until red. Steam with seasonings. Garnish with cilantro.",
+      "efficacy": "Tonifies weakness, strengthens the body, promotes longevity.",
+      "health_care_application": "Suitable for those with chronic weakness and the elderly.",
+      "image": "https://thewoksoflife.com/wp-content/uploads/2019/12/tipang-16.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Qi and Blood Tonic Lamb Soup",
+      "composition": "300g lamb, 3g salt, 25g astragalus, 25g dang shen, 25g dang gui, 25g ginger slices.",
+      "preparation_method": "Wash lamb, cut into small pieces. Wrap astragalus, dang shen, and dang gui in gauze. Cook lamb and herbs until lamb is tender. Add ginger slices and salt.",
+      "efficacy": "Tonifies qi and blood, promotes blood circulation, benefits the spleen, and dispels cold.",
+      "health_care_application": "Suitable for post-illness weakness, postpartum blood deficiency, and general weakness.",
+      "image": "https://www.mayway.com/media/wysiwyg/blog/2022-blogs/lamb-soup-recipe.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Red Date Peanut Braised Rabbit Meat",
+      "composition": "10 red dates, 50g peanuts, 500g rabbit meat, seasonings as needed.",
+      "preparation_method": "Wash red dates, peanuts, and rabbit meat. Boil all ingredients until well-cooked. Season to taste.",
+      "efficacy": "Tonifies qi and blood, nourishes the spleen, and strengthens the kidneys.",
+      "health_care_application": "Consume twice daily, suitable for those with blood deficiency and dull complexion.",
+      "image": "https://static01.nyt.com/images/2012/01/04/dining/04KITCH_SPAN/04KITCH_SPAN-superJumbo.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Double Nourishing Meat",
+      "composition": "1g deer antler, 15g ginseng, 250g pork, 250g chicken, 1L chicken broth, cilantro, green onion, ginger, salt, monosodium glutamate, honey, soy sauce, lard, cooking wine, water starch, and Sichuan peppercorn water as needed.",
+      "preparation_method": "Soak ginseng in water, cut into fine shreds with deer antler. Cut pork and chicken into small cubes. Stir-fry in hot oil, then stew with other ingredients. Thicken the sauce.",
+      "efficacy": "Tonifies qi and blood, strengthens yang, and invigorates the kidneys.",
+      "health_care_application": "Consume every half month, suitable for those with deficiency in qi and blood.",
+      "image": "https://www.allrecipes.com/thmb/q62i2-plnW3Wqdvq3BfCJ9k-2vI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13023-beef-barley-vegetable-soup-ddmfs-3X4-5181-345e847a4699417fb369ac25ec586eb0.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Ginseng and Astragalus Stewed Turtle",
+      "composition": "1 turtle (approximately 1kg), 1 hen (approximately 1.5kg), 30g astragalus, 30g ginseng, 15g shiitake mushrooms, lard, cooking wine, salt, monosodium glutamate, pepper, green onion, and ginger as needed.",
+      "preparation_method": "Break the turtle shell, extract the meat, and clean. Cut into cubes. Blanch the turtle meat. Clean and gut the hen. Place turtle and hen in a pot, add lard, ginger, green onion, cooking wine, salt, and water. Stew until tender. Season and garnish.",
+      "efficacy": "Tonifies qi and blood, strengthens muscles and bones.",
+      "health_care_application": "Suitable for consumption with meals, beneficial for those with deficiency in qi and blood.",
+      "image": "https://i.pinimg.com/originals/c2/5c/50/c25c50198d050fb2b56177c211093f65.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Poria Mushroom Floating Wheat Stewed Fish",
+      "composition": "3g Poria, 3g Codonopsis (Dang Shen), 6g Floating Wheat, 100g fish, 30g ham, 10g ginger, 10g green onion, 10g Shaoxing wine, salt as needed.",
+      "preparation_method": "Remove the head of the live fish, blanch in boiling water for 3 minutes, clean the internal organs, and cut ham into small pieces covering the fish. In a bowl, combine the seasoning and water, enclose Floating Wheat and Poria in gauze and place in the soup. Cut Codonopsis into sections and put them in the bowl. Steam over high heat for 1 hour.",
+      "efficacy": "Invigorates qi, strengthens the spleen, nourishes yin, and replenishes blood.",
+      "health_care_application": "Suitable as a meal accompaniment, beneficial for those with weak spleen, blood deficiency, and overall weakness.",
+      "image": "https://www.foodandwine.com/thmb/DAjfrDFq3JlNA45mEWFZnQYNCPQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sauteed-lake-fish-with-creamy-wild-mushrooms-XL-RECIPE0418-c9f7a616c2ee439c996e72dd207b9af7.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Rehmannia Steamed Black Chicken",
+      "composition": "1 black chicken, 250g raw Rehmannia, 150g rock sugar.",
+      "preparation_method": "Remove feathers and internal organs from the chicken, wash, and stuff the chicken with shredded raw Rehmannia and rock sugar. Place it in a bowl and steam until cooked.",
+      "efficacy": "Supplements qi and blood, nourishes essence and marrow.",
+      "health_care_application": "Consume the chicken meat and soup, suitable for those with deficient qi and blood, bone steaming heat, fatigue, and weakness.",
+      "image": "https://ivorybaiyan.files.wordpress.com/2014/01/e98791e9879de99bb2e880b3e892b8e99b9e-steamed-chicken-with-wood-ears.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Buddha's Hand Pumpkin Chicken",
+      "composition": "10g Buddha's Hand flower, 1 mature pumpkin, 750g young chicken, 250g edamame, green onion, ginger, salt, yellow wine, rice wine, monosodium glutamate, soy sauce, brown sugar, Job's tears, peppercorns, tofu milk, vegetable oil, rice flour, and water as needed.",
+      "preparation_method": "Wash the petals of the Buddha's Hand flower; roast Job's tears and peppercorns and grind into coarse powder. Cut the chicken into pieces, marinate with green onion, ginger, salt, soy sauce, brown sugar, tofu milk, yellow wine, rice wine, and monosodium glutamate. Add rice flour and vegetable oil. Peel and clean the edamame, mix them with the same seasonings. Wash and scrub the pumpkin, cut an opening, and stuff it with half the edamame and half the Buddha's Hand flower. Add chicken pieces, then the remaining Buddha's Hand flower and edamame. Cover and steam until cooked.",
+      "efficacy": "Invigorates the middle, benefits qi, and nourishes the spleen and stomach.",
+      "health_care_application": "Consumed with meals, suitable for the weak in middle and old age.",
+      "image": "https://www.onceuponapumpkinrd.com/wp-content/uploads/2019/11/fall-buddha-bowl-300x300.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Coix Seed Chicken Stew",
+      "composition": "1 chicken, 20g coix seed, Shaoxing wine, salt, green onion, ginger, pepper, and an orange.",
+      "preparation_method": "Remove the chicken's feathers and internal organs, wash, and cut the chicken (including bones) into approximately 3 cm square pieces. Place in a deep pot, add about 10 cups of water, and add coix seeds. Bring to a boil over high heat, then simmer over low heat for 2 hours until the chicken is tender. Add wine, salt, green onion, ginger, pepper, and orange juice to taste.",
+      "efficacy": "Tonifies vitality.",
+      "health_care_application": "Consumed with meals, suitable for those feeling fatigued.",
+      "image": "https://www.smalltownwoman.com/wp-content/uploads/2020/08/Chicken-Stew-Facebook.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Astragalus Stewed Black-Boned Chicken",
+      "composition": "50g astragalus, 1 black-boned chicken, green onion, ginger, salt, peppercorns, cooking wine.",
+      "preparation_method": "Rinse astragalus, soak in warm water, and slice. Clean the black-boned chicken, scald in boiling water for 3 minutes, then wash off blood. Stuff the chicken with astragalus, green onion, ginger, and peppercorns. Place the chicken in a soup bowl, add water, cooking wine, and salt. Stew until the chicken is tender. Season with monosodium glutamate.",
+      "efficacy": "Tonifies qi, nourishes blood, regulates menstruation.",
+      "health_care_application": "Consumed with meals, suitable for postpartum, post-illness, and elderly individuals with blood and qi deficiency.",
+      "image": "https://whattocooktoday.com/wp-content/uploads/2010/12/silkie-chicken-soup-10.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Angelica and Astragalus Steamed Chicken",
+      "composition": "100g baked Angelica, 20g Chinese Angelica (Dang Gui), 1 young hen (about 1.5kg), 30g Shaoxing wine, 3g monosodium glutamate, 3g pepper, green onion, ginger.",
+      "preparation_method": "Cut the Chinese Angelica into slices and combine with baked Angelica. Remove feathers and internal organs from the hen, wash, and stuff it with Angelica slices. Place the hen in a bowl, add ginger, green onion, salt, wine, pepper, and water. Steam for 2 hours, then add monosodium glutamate before serving.",
+      "efficacy": "Supplements qi and blood.",
+      "health_care_application": "Consume the chicken meat after removing medicinal residues. Suitable for those with post-illness qi and blood deficiency, especially in older individuals.",
+      "image": "https://i.pinimg.com/474x/b3/8f/00/b38f005032cc9b1d5da708b73403a9b0.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Ginseng Steamed Chicken",
+      "composition": "15g fresh ginseng, 200g chicken breast, 25g Lily bulb, 25g cucumber, 1 egg white, green onion, ginger, coriander stems, cooking wine, salt, chicken broth, lard, sesame oil, water starch, and monosodium glutamate as needed.",
+      "preparation_method": "Slice the chicken breast; wash the ginseng, cut it into 0.5cm thick slices; slice the cucumber; julienne the green onion, ginger, and coriander stems. Mix the chicken slices with salt, water starch, and egg white. Heat enough lard in a pan, add the chicken slices and fry until they float and change color. Remove from the pan, leaving a small amount of oil. Stir-fry the shredded ingredients, then add the chicken slices, cucumber slices, Lily bulb, and coriander stems. Pour in the prepared sauce, stir briefly, and drizzle with sesame oil.",
+      "efficacy": "Replenishes vital energy.",
+      "health_care_application": "Consumed with meals, suitable for those with prolonged weakness due to illness.",
+      "image": "https://www.sharefood.sg/wp-content/uploads/2018/03/Herbal-emperor-chicken-1-640x360.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Hairy Solomon's Seal and Ginseng Stewed Chicken",
+      "composition": "1 black chicken, 15g ginseng, 20g Hairy Solomon's Seal, 10 quail eggs, a little white wine.",
+      "preparation_method": "Boil the quail eggs and peel them. Cut ginseng and Hairy Solomon's Seal into thin slices. Clean the black chicken, put its head and feet inside, place the chicken in a stew pot, add ginseng and Hairy Solomon's Seal on top, pour in an appropriate amount of water, and stew over high heat for 2 hours. Add white wine and quail eggs, then stew for another 40 minutes.",
+      "efficacy": "Supplements qi and blood.",
+      "health_care_application": "Consumed with meals, 1-2 times daily, suitable for those with lackluster complexion and fatigue due to blood and qi deficiency.",
+      "image": "https://futuredish.com/wp-content/uploads/2018/08/SamgyetangBlog.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Replenishing Essence Duck with Orange Peel",
+      "composition": "30g Astragalus, 10g dried tangerine peel, 1 duck, 100g lean pork, monosodium glutamate, salt, cooking wine, soy sauce, ginger slices, green onion sections, lard, and sesame oil as needed.",
+      "preparation_method": "Pluck and gut the duck, wash, smear soy sauce on the skin, deep-fry in hot oil until golden, then wash off the fine particles. Place in a clay pot (lined with a porcelain plate), add water. Cut lean pork into chunks, blanch, wash off blood, and put it in the pot with Astragalus, dried tangerine peel, monosodium glutamate, cooking wine, salt, soy sauce, ginger slices, green onion sections, and enough water to submerge the duck. Place the pot on the fire and simmer until the duck is cooked. Remove the original juice, filter it, and pour it over the duck.",
+      "efficacy": "Replenishes vital energy, invigorates blood, and strengthens the body.",
+      "health_care_application": "Consumed with meals, suitable for those with weakened qi and blood.",
+      "image": "https://eatwhattonight.com/wp-content/uploads/2017/05/Braised-Duck-w-Dried-Tangerine-Peel_4.jpg"
     }
   ]
 }
