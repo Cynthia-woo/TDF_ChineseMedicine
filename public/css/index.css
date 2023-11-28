@@ -7,6 +7,9 @@ body {
     color: #333;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+}
 
 a {
     text-decoration: none;
@@ -123,6 +126,7 @@ button, input {
     }
 
     #userInput_button {
+        margin-left: 30px;
         display: inline-block;
         height: 100%;
     }
@@ -133,10 +137,11 @@ button, input {
 
     #recipe-container {
         display: flex;
+        max-width: 1000px;
         flex-wrap: nowrap;
         height: 30vh;
         justify-content: space-around;
-        margin: 20px 50px 0;
+        margin: 20px auto 0;
     }
 
     .recipe {
