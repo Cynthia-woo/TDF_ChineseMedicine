@@ -2,4 +2,4 @@
 node_modules
 package-lockg.json
 package.json
-
+/node_modules/.bin/mime
