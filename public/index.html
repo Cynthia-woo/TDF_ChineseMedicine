@@ -9,7 +9,9 @@
   <title>HerbaChatec</title>
 </head>
 
-<body>
+
+<body id="main-body" style="font-family: Verdana;">
+
 <header>
   <div class="header_title"><a href="/">HerbaChatec</a></div>
   
@@ -22,9 +24,9 @@
     <div class='server_output'>
       <div class="server_output_content">Hello! How can I assist you with Chinese medicinal recipes today?</div>
     </div>
+
   </div>
 </div>
-
 <footer>
   <div class="input_content" onkeydown="handleKeyDown(event)">
     <input id="userInput" type="text" placeholder="Ask everything here"/>
@@ -32,9 +34,15 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/js/app.js"></script>
+<div id="loading-label">Loading...</div>
 
+
+
+
+
+
+
+<script src="/js/app.js"></script>
 <script>
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
@@ -43,20 +51,23 @@
     }
   }
 
-  const callAPI = async() => {
-    console.log("API call");
+  async function callAPI() {
     const inputText = document.getElementById('userInput').value;
     const responseDiv = document.getElementById('response_content');
-    if (!inputText) return;
+    const loadingLabel = document.getElementById('loading-label');
+    if (!inputText) return;// in case user don't submit anything
+
+    loadingLabel.style.display = 'block';
+
     try {
       const response = await fetch('/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({inputText})
+        body: JSON.stringify({ inputText }),
       });
-      console.log('callAPI response', response);
+
       if (response.ok) {
         const data = await response.json();
         console.log('callAPI data', data);
@@ -66,10 +77,12 @@
         const scrollingContainer = document.getElementById('response_content');
         scrollingContainer.scrollTop = scrollingContainer.scrollHeight;
       } else {
-        console.log('callAPI Error:', response.status);
+        console.error('Error:', response.status);
       }
     } catch (error) {
-      console.log('Error:', error);
+      console.error('Error:', error);
+    } finally {
+      loadingLabel.style.display = 'none';
     }
   }
 
