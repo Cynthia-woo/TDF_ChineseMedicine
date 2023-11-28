@@ -1,0 +1,58 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "枸杞桂圆鸽蛋 (Goji, Longan, and Pigeon Egg Congee)",
+      "composition": "Pigeon eggs 5, longan flesh 10g, goji berries 10g, rock sugar 25g.",
+      "preparation_method": "Boil pigeon eggs, peel, and place in a bowl with longan, goji berries, and rock sugar. Stew over low heat until cooked.",
+      "efficacy": "Tonifies kidneys, nourishes Qi, nourishes Yin, and enriches blood.",
+      "health_care_application": "Suitable for those who are weak, underweight, and experience weakness in the lower back and knees. Consume on an empty stomach in the morning.",
+      "image": "path/to/image1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "红焖鹌鹑 (Braised Quail)",
+      "composition": "Quail 10, soaked shiitake mushrooms 60g, hen meat 100g, pork belly 250g, baby bok choy 10, spring onion, ginger, Shaoxing wine, sugar, soy sauce, lard, chicken broth, cornstarch, MSG, white pepper, all as needed.",
+      "preparation_method": "(1) Prepare quail, mushrooms, bamboo shoots, pork belly, and chicken meat. (2) Sauté pork and chicken, add mushrooms, bamboo shoots, spring onion, and ginger. Add chicken broth, soy sauce, Shaoxing wine, salt, white pepper, sugar, MSG. Add quail, simmer until tender. Thicken the sauce, pour over quail, and serve with blanched baby bok choy.",
+      "efficacy": "Tonifies the middle, strengthens Qi, and strengthens the waist and kidneys.",
+      "health_care_application": "Suitable as a meal accompaniment for those with Qi and blood deficiency.",
+      "image": "path/to/image2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "人参银耳鸽蛋汤 (Ginseng, Tremella, and Pigeon Egg Soup)",
+      "composition": "Ginseng powder 2-4g, Tremella 20g, soaked shiitake mushrooms 15g, pigeon eggs 15g, lean pork 30g, chicken broth, salt, chicken oil, all as needed.",
+      "preparation_method": "Steam Tremella, place in a bowl with pigeon eggs, pork, and mushrooms. Cook chicken broth, add salt, cook Tremella until soft, add chicken oil and ginseng powder. Pour over the steamed ingredients.",
+      "efficacy": "Tonifies Qi and blood, nourishes Yin and Yang.",
+      "health_care_application": "Suitable for those with post-illness weakness.",
+      "image": "path/to/image3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "莲藕猪脊骨汤 (Lotus Root, Pork Backbone, and Chinese Yam Soup)",
+      "composition": "Lotus root 400g, Poria 10g, Codonopsis 8-10g, Radix Rehmanniae Preparata 8g, White Peony Root 8g, Atractylodes 12g, Ligusticum 5g, pork backbone 600g, soy sauce, sesame oil, MSG, salt, all as needed.",
+      "preparation_method": "Peel and wash lotus root, cut into pieces. Cut pork backbone into sections. Wrap herbs in clean gauze, simmer in boiling water. Add salt for taste. Serve as a meal accompaniment.",
+      "efficacy": "Tonifies Qi and blood, nourishes the skin, eliminates various ailments, promotes longevity.",
+      "health_care_application": "Suitable for those with Qi and blood deficiency, pale complexion, and lean physique.",
+      "image": "path/to/image4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "瘦肉章鱼西菜汤 (Lean Pork, Octopus, and Watercress Soup)",
+      "composition": "Watercress 1.5kg, dried octopus 50g, lean pork 500g, honey dates 3, MSG 4g, salt 7g, water 3kg.",
+      "preparation_method": "Wash watercress, remove tough stems. Clean octopus and remove the thin membrane. Wash pork, cut into pieces. Boil water, add octopus and watercress. When boiling, add pork and honey dates. Simmer for 90 minutes, season with salt and MSG.",
+      "efficacy": "Tonifies Qi and blood, nourishes essence.",
+      "health_care_application": "Suitable for those recovering from illness with weak physique and deficient blood.",
+      "image": "path/to/image5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "花旗参滋补汤 (American Ginseng and Fish Soup)",
+      "composition": "American ginseng 10g, red dates 40g, Chinese yam 25g, coix seed 25g, tangerine peel 5g, live crucian carp 300g, cooking wine, salt, MSG, pepper, ginger, fresh soup, all as needed.",
+      "preparation_method": "Scale and gut the carp, marinate with wine, salt, and ginger. Put all ingredients in boiling soup, simmer on low heat for about 2 hours. Season with pepper, MSG, and salt before serving.",
+      "efficacy": "Tonifies Qi and blood, nourishes the liver and kidneys.",
+      "health_care_application": "Consumed with fish, suitable for those with Qi and blood deficiency.",
+      "image": "path/to/image6.jpg"
+    }
+  ]
+}

@@ -1,101 +1,88 @@
-
-
 *, body {
     margin: 0;
-    font-family: Verdana,serif;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: #323232;
 }
-button, input {
-    border:none;
-    background-color: #fff;
+
+button, input[type="submit"] {
+    background-color: #9e3d59;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
+button:hover, input[type="submit"]:hover {
+    background-color: #7a2c45;
+}
 
 /* Media query for screens with a width of 375px or more */
 @media (min-width: 375px) {
-    header {
-        height: 10vh;
-        width: 100vw;
-        background-color: lightblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #header_title {
-
+    header, footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #f8e8d8;
     }
 
     .response_container {
-        height: 80vh;
-        background-color: #efefef;
-        padding: 30px 30px;
+        max-width: 500px;
+        margin: auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 80vh; /* Adjust the height as needed */
+        width: 200vh;
         display: flex;
         flex-direction: column;
-        overflow: auto;
+        justify-content: space-between;
     }
+
     .response_content {
-        padding-bottom:30px;
+        flex-grow: 1;
         overflow-y: auto;
+        padding: 10px;
+        background-color: #eaeaea;
+        border-bottom: 1px solid #ddd;
     }
 
-    .user_input, .server_output {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .user_input_content, .server_output_content {
-        background-color: #fff;
-        /*height: 50px;*/
-        max-width: 80%;
-        border-radius: 20px 20px 20px 0;
-        padding: 20px;
-        margin: 10px 15px;
-        text-align: left;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .user_input {
-        align-items: flex-end;
-    }
-
-    .user_input_content {
-        background-color: #229f22;
-        text-align: right;
-        color: white;
-        border-radius: 20px 20px 0 20px;
-    }
-
-    footer {
-        height: 10vh;
-        background-color: rgba(255, 255, 255, 0.52);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    #userInput, #userInput_button {
+        padding: 10px;
+        border: none;
+        border-top: 1px solid #ddd;
     }
 
     #userInput {
-        display: inline-block;
-        width: 60vw;
-        height: 50px;
-        max-height: 10vh;
-    }
-
-    #userInput:active {
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-        border-color: #888888;
-
+        flex-grow: 1;
+        width: auto; /* Adjust width to fill the space */
     }
 
     #userInput_button {
-        display: inline-block;
-        height: 20px;
+        width: 80px; /* Adjust the width as needed */
+    }
+
+    #recipe-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .recipe {
+        width: 200px;
+        height: 200px;
+        background-color: #a0a0a0; /* or an image */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 10px;
+        /* Add more styles as needed */
     }
 }
