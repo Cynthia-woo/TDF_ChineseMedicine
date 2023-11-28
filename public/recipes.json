@@ -7,7 +7,7 @@
       "preparation_method": "Boil pigeon eggs, peel, and place in a bowl with longan, goji berries, and rock sugar. Stew over low heat until cooked.",
       "efficacy": "Tonifies kidneys, nourishes Qi, nourishes Yin, and enriches blood.",
       "health_care_application": "Suitable for those who are weak, underweight, and experience weakness in the lower back and knees. Consume on an empty stomach in the morning.",
-      "image": "path/to/image1.jpg"
+      "image": "https://photocdn.sohu.com/20150609/mp18129250_1433817871063_1_th.jpeg"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "preparation_method": "(1) Prepare quail, mushrooms, bamboo shoots, pork belly, and chicken meat. (2) Sauté pork and chicken, add mushrooms, bamboo shoots, spring onion, and ginger. Add chicken broth, soy sauce, Shaoxing wine, salt, white pepper, sugar, MSG. Add quail, simmer until tender. Thicken the sauce, pour over quail, and serve with blanched baby bok choy.",
       "efficacy": "Tonifies the middle, strengthens Qi, and strengthens the waist and kidneys.",
       "health_care_application": "Suitable as a meal accompaniment for those with Qi and blood deficiency.",
-      "image": "path/to/image2.jpg"
+      "image": "https://p0.itc.cn/images01/20210401/7cc30576521a4917a9b7bcad995a6aa4.jpeg"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "preparation_method": "Steam Tremella, place in a bowl with pigeon eggs, pork, and mushrooms. Cook chicken broth, add salt, cook Tremella until soft, add chicken oil and ginseng powder. Pour over the steamed ingredients.",
       "efficacy": "Tonifies Qi and blood, nourishes Yin and Yang.",
       "health_care_application": "Suitable for those with post-illness weakness.",
-      "image": "path/to/image3.jpg"
+      "image": "https://k.sinaimg.cn/n/sinacn20190824ac/249/w600h449/20190824/e5c0-icqznha5162929.jpg/w700d1q75cms.jpg"
     },
     {
       "id": 4,
@@ -34,7 +34,8 @@
       "preparation_method": "Peel and wash lotus root, cut into pieces. Cut pork backbone into sections. Wrap herbs in clean gauze, simmer in boiling water. Add salt for taste. Serve as a meal accompaniment.",
       "efficacy": "Tonifies Qi and blood, nourishes the skin, eliminates various ailments, promotes longevity.",
       "health_care_application": "Suitable for those with Qi and blood deficiency, pale complexion, and lean physique.",
-      "image": "path/to/image4.jpg"
+      "image": "https://i8.meishichina.com/attachment/recipe/2018/08/18/20180818153458313145210878013.jpg?x-oss-process=style/p800"
+
     },
     {
       "id": 5,
@@ -43,7 +44,7 @@
       "preparation_method": "Wash watercress, remove tough stems. Clean octopus and remove the thin membrane. Wash pork, cut into pieces. Boil water, add octopus and watercress. When boiling, add pork and honey dates. Simmer for 90 minutes, season with salt and MSG.",
       "efficacy": "Tonifies Qi and blood, nourishes essence.",
       "health_care_application": "Suitable for those recovering from illness with weak physique and deficient blood.",
-      "image": "path/to/image5.jpg"
+      "image": "https://i3.meishichina.com/atta/recipe/2018/08/25/20180825153516992551810674111.jpg?x-oss-process=style/p800"
     },
     {
       "id": 6,
@@ -52,7 +53,8 @@
       "preparation_method": "Scale and gut the carp, marinate with wine, salt, and ginger. Put all ingredients in boiling soup, simmer on low heat for about 2 hours. Season with pepper, MSG, and salt before serving.",
       "efficacy": "Tonifies Qi and blood, nourishes the liver and kidneys.",
       "health_care_application": "Consumed with fish, suitable for those with Qi and blood deficiency.",
-      "image": "path/to/image6.jpg"
+      "image": "https://imgcache.dealmoon.com/fsvrugccache.dealmoon.com/ugc/950/aa1/df2/9024a8cc0a84505e4d9881a.jpg_1280_1280_3_8d41.jpg"
+
     }
   ]
 }
