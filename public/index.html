@@ -199,7 +199,7 @@
                 <p>${jsonData?.comment}</p>
                 <ul>${Object.values(jsonData?.recipes).map(recipe => `
                     <li>
-            <strong>${recipe?.name.slice(2, -2)}</strong>
+            <strong>${recipe?.name?.slice(2, -2)}</strong>
             <ul>
               <li>Main Medicine: ${recipe['main medicine']}</li>
               <li>Composition: ${recipe?.composition}</li>
