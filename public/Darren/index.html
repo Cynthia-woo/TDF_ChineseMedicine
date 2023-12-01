@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>HerbaChatec</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="42" height="42">
+    </div>
+    <div class="title">
+      <p>Chinese MediDish</p>
+    </div>
+    <div class="return-icon">
+      <img src="back.png" alt="Return Icon" width="30" height="25">
+    </div>
+  </div>
+
+  <div class="list-container">
+    <h2 class="list-title">Recommendations</h2>
+    <!-- 列表条目 -->
+    <div class="list-item expandable expand">
+      <div class="original-text item-icon1">Chrysanthemum Tea</div>
+      <div class="item-content">
+        <img src="rec1.png" alt="Recommendation Image">
+      </div>
+    </div>
+    <div class="list-item expandable">
+      <div class="original-text item-icon2">Ginseng Tea</div>
+      <div class="item-content">
+        <img src="rec2.png" alt="Recommendation Image">
+      </div>
+    </div>
+    <div class="list-item expandable">
+      <div class="original-text item-icon3">Goji Berry Chicken Soup</div>
+      <div class="item-content">
+        <img src="rec3.png" alt="Recommendation Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <input type="text" class="message-input">
+    <button class="send-button"><img src="send.png" alt="Send" width="100" height="100"></button>
+  </div>
+
+  <img src="backdrop.png" alt="star" class="animated-image5">
+  <img src="greeting.png" width="100px" height="51px" alt="greeting" class="animated-image4">
+  <img src="bot.png" alt="Bot" class="animated-image" id="botImage">
+  <img src="wave.png" alt="Wave" class="animated-image2">
+  <img src="star.png" alt="star" class="animated-image3">
+
+
+  <script>
+    // 获取所有具有 ".expandable" 类的列表项元素
+    const expandableItems = document.querySelectorAll('.expandable');
+
+    // 遍历每个展开/折叠的列表项并添加点击事件监听器
+    expandableItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // 如果点击的列表项没有展开类，则展开它，并关闭其他已展开的项
+        if (!item.classList.contains('expand')) {
+          expandableItems.forEach(el => {
+            el.classList.remove('expand');
+          });
+          item.classList.add('expand');
+        } else {
+          // 否则，点击已展开的列表项将其折叠
+          return;
+        }
+      });
+    });
+
+    const botImage = document.getElementById("botImage");
+    const imageSources = ["bot.png", "bot_eyes_closed.png"];
+    let currentIndex = 0;
+
+    setInterval(function () {
+      let currentIndex = 0;
+      currentIndex = (currentIndex + 1) % imageSources.length;
+      botImage.src = imageSources[currentIndex];
+
+      let nextIndex = (currentIndex + 1) % imageSources.length;
+      setTimeout(function () {
+        botImage.src = imageSources[nextIndex];
+      }, 100);
+
+      setTimeout(function () {
+        botImage.src = imageSources[currentIndex];
+      }, 2000);
+    }, 2200);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const returnIcon = document.getElementById("returnIcon");
+      const listContainer = document.getElementById("listContainer");
+      const bottomBar = document.getElementById("bottomBar");
+
+      let isSidebarVisible = true;
+
+      returnIcon.addEventListener("click", function () {
+        isSidebarVisible = !isSidebarVisible;
+
+        if (isSidebarVisible) {
+          listContainer.classList.add("list-container");
+          listContainer.classList.remove("list-container-hidden");
+          bottomBar.classList.add("bottom-bar");
+          bottomBar.classList.remove("full-width");
+          returnIcon.innerHTML = '<img src="back.png" alt="Return Icon" width="30" height="25">';
+        } else {
+          listContainer.classList.add("list-container-hidden");
+          listContainer.classList.remove("list-container");
+          bottomBar.classList.remove("bottom-bar");
+          bottomBar.classList.add("full-width");
+          returnIcon.innerHTML = '<img src="list.png" alt="Recommend Icon" width="30" height="25">';
+        }
+      });
+    });
+
+
+  </script>
+
+</body>
+
+</html>
