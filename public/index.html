@@ -1,98 +1,116 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-
-  <title>Chinese MediDish</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@300;400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Chinese MediDish</title>
 </head>
+
 
 <body>
 
-  <div class="navbar">
+<div class="navbar">
     <div class="logo">
-      <img src="ui_img/logo.png" alt="Logo" width="42" height="42">
+        <img src="ui_img/logo.png" alt="Logo" width="42" height="42">
     </div>
     <div class="title">
-      <p>Chinese MediDish</p>
+        <p>Chinese MediDish</p>
     </div>
     <div class="return-icon">
-      <img src="ui_img/back.png" alt="Return Icon" width="30" height="25">
-    </div>
-  </div>
-
-  <div class="list-container">
-    <h2 class="list-title">Recommendations</h2>
-    <!-- 列表条目 -->
-    <div class="list-item expandable expand">
-      <div class="original-text item-icon1">Chrysanthemum Tea</div>
-      <div class="item-content">
-        <img src="ui_img/rec1.png" alt="Recommendation Image">
-      </div>
-    </div>
-    <div class="list-item expandable">
-      <div class="original-text item-icon2">Ginseng Tea</div>
-      <div class="item-content">
-        <img src="ui_img/rec2.png" alt="Recommendation Image">
-      </div>
-    </div>
-    <div class="list-item expandable">
-      <div class="original-text item-icon3">Goji Berry Chicken Soup</div>
-      <div class="item-content">
-        <img src="ui_img/rec3.png" alt="Recommendation Image">
-      </div>
-    </div>
-  </div>
-<!--    chatbox Session: chat box windows and bottom input bar-->
-  <div class="response_container">
-    <div id="loading-label" style="display: none"><img
-            src="https://npr.brightspotcdn.com/legacy/sites/nhpr/files/202010/InternetSlowdown_Day.gif"
-            alt="Animated GIF"></div>
-    <div id="response_content">
-        <div class='server_output'>
-            <div class="server_output_content">Welcome to "HerbaChatec", your personalized Chinese Medicinal Diet Master! I am here to assist you in creating nutritious and tailored medicinal recipes based on your individual needs. Whether you're looking for a single meal recommendation, a daily meal plan, or even a weekly culinary guide, I'm ready to provide you with a variety of medicinal diet options.</div>
-        </div>
-
+        <img src="ui_img/back.png" alt="Return Icon" width="30" height="25">
     </div>
 </div>
-  <footer>
-    <div class="input_content" onkeydown="handleKeyDown(event)">
-        <input id="userInput" type="text" placeholder="Ask everything here"/>
-        <button id="userInput_button" type="submit" onclick="callAPI()"><img src="ui_img/send.png" alt="Send" width="100" height="100"></button>
+<div class="main_container">
+    <div class="left_container">
+        <div class="response_container">
+            <!--    <div id="loading-label" style="display: none"><img-->
+            <!--            src="https://npr.brightspotcdn.com/legacy/sites/nhpr/files/202010/InternetSlowdown_Day.gif"-->
+            <!--            alt="Animated GIF"></div>-->
+            <div class="server_output_animation">
+                <img src="ui_img/backdrop.png" alt="star" class="animated-image5">
+                <img src="ui_img/greeting.png" width="100px" height="51px" alt="greeting" class="animated-image4">
+                <img src="ui_img/bot.png" alt="Bot" class="animated-image" id="botImage">
+                <img src="ui_img/wave.png" alt="Wave" class="animated-image2">
+                <img src="ui_img/star.png" alt="star" class="animated-image3">
+            </div>
+            <div id="response_content">
+                <div class='server_output'>
+                    <div class="server_output_content">Welcome to "HerbaChatec", your personalized Chinese Medicinal
+                        Diet Master! I am here to assist you in creating nutritious and tailored medicinal recipes based
+                        on your individual needs. Whether you're looking for a single meal recommendation, a daily meal
+                        plan, or even a weekly culinary guide, I'm ready to provide you with a variety of medicinal diet
+                        options.
+                    </div>
+                </div>
+                <!--                <div class='user_input'>-->
+                <!--                    <div class="user_input_content">${inputText}</div>-->
+                <!--                </div>-->
+
+            </div>
+        </div>
+        <div class="input_content" onkeydown="handleKeyDown(event)">
+            <input id="userInput" type="text" placeholder="Ask everything here"/>
+            <button id="userInput_button" type="submit" onclick="callAPI()"></button>
+        </div>
     </div>
-</footer>
+    <div class="right_container">
+        <div class="list-container">
+            <h2 class="list-title">Recommendations</h2>
+            <!-- 列表条目 -->
+            <div class="list-item expandable expand">
+                <div class="original-text item-icon1">Chrysanthemum Tea</div>
+                <div class="item-content">
+                    <img src="ui_img/rec1.png" alt="Recommendation Image">
+                </div>
+            </div>
+            <div class="list-item expandable">
+                <div class="original-text item-icon2">Ginseng Tea</div>
+                <div class="item-content">
+                    <img src="ui_img/rec2.png" alt="Recommendation Image">
+                </div>
+            </div>
+            <div class="list-item expandable">
+                <div class="original-text item-icon3">Goji Berry Chicken Soup</div>
+                <div class="item-content">
+                    <img src="ui_img/rec3.png" alt="Recommendation Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    chatbox Session: chat box windows and bottom input bar-->
 
-  <img src="ui_img/backdrop.png" alt="star" class="animated-image5">
-  <img src="ui_img/greeting.png" width="100px" height="51px" alt="greeting" class="animated-image4">
-  <img src="ui_img/bot.png" alt="Bot" class="animated-image" id="botImage">
-  <img src="ui_img/wave.png" alt="Wave" class="animated-image2">
-  <img src="ui_img/star.png" alt="star" class="animated-image3">
 
+<!--  <img src="ui_img/backdrop.png" alt="star" class="animated-image5">-->
+<!--  <img src="ui_img/greeting.png" width="100px" height="51px" alt="greeting" class="animated-image4">-->
+<!--  <img src="ui_img/bot.png" alt="Bot" class="animated-image" id="botImage">-->
+<!--  <img src="ui_img/wave.png" alt="Wave" class="animated-image2">-->
+<!--  <img src="ui_img/star.png" alt="star" class="animated-image3">-->
 
-  <script>
+<script>
     // 获取所有具有 ".expandable" 类的列表项元素
     const expandableItems = document.querySelectorAll('.expandable');
 
     // 遍历每个展开/折叠的列表项并添加点击事件监听器
     expandableItems.forEach(item => {
-      item.addEventListener('click', () => {
-        // 如果点击的列表项没有展开类，则展开它，并关闭其他已展开的项
-        if (!item.classList.contains('expand')) {
-          expandableItems.forEach(el => {
-            el.classList.remove('expand');
-          });
-          item.classList.add('expand');
-        } else {
-          // 否则，点击已展开的列表项将其折叠
-          return;
-        }
-      });
+        item.addEventListener('click', () => {
+            // 如果点击的列表项没有展开类，则展开它，并关闭其他已展开的项
+            if (!item.classList.contains('expand')) {
+                expandableItems.forEach(el => {
+                    el.classList.remove('expand');
+                });
+                item.classList.add('expand');
+            } else {
+                // 否则，点击已展开的列表项将其折叠
+            }
+        });
     });
 
     const botImage = document.getElementById("botImage");
@@ -100,97 +118,121 @@
     let currentIndex = 0;
 
     setInterval(function () {
-      let currentIndex = 0;
-      currentIndex = (currentIndex + 1) % imageSources.length;
-      botImage.src = imageSources[currentIndex];
-
-      let nextIndex = (currentIndex + 1) % imageSources.length;
-      setTimeout(function () {
-        botImage.src = imageSources[nextIndex];
-      }, 100);
-
-      setTimeout(function () {
+        let currentIndex = 0;
+        currentIndex = (currentIndex + 1) % imageSources.length;
         botImage.src = imageSources[currentIndex];
-      }, 2000);
+
+        let nextIndex = (currentIndex + 1) % imageSources.length;
+        setTimeout(function () {
+            botImage.src = imageSources[nextIndex];
+        }, 100);
+
+        setTimeout(function () {
+            botImage.src = imageSources[currentIndex];
+        }, 2000);
     }, 2200);
 
     document.addEventListener("DOMContentLoaded", function () {
-      const returnIcon = document.getElementById("returnIcon");
-      const listContainer = document.getElementById("listContainer");
-      const bottomBar = document.getElementById("bottomBar");
+        const returnIcon = document.getElementById("returnIcon");
+        const listContainer = document.getElementById("listContainer");
+        const bottomBar = document.getElementById("bottomBar");
 
-      let isSidebarVisible = true;
+        let isSidebarVisible = true;
 
-      returnIcon.addEventListener("click", function () {
-        isSidebarVisible = !isSidebarVisible;
+        returnIcon.addEventListener("click", function () {
+            isSidebarVisible = !isSidebarVisible;
 
-        if (isSidebarVisible) {
-          listContainer.classList.add("list-container");
-          listContainer.classList.remove("list-container-hidden");
-          bottomBar.classList.add("input_content");
-          bottomBar.classList.remove("full-width");
-          returnIcon.innerHTML = '<img src="ui_img/back.png" alt="Return Icon" width="30" height="25">';
-        } else {
-          listContainer.classList.add("list-container-hidden");
-          listContainer.classList.remove("list-container");
-          bottomBar.classList.remove("input_content");
-          bottomBar.classList.add("full-width");
-          returnIcon.innerHTML = '<img src="ui_img/list.png" alt="Recommend Icon" width="30" height="25">';
-        }
-      });
+            if (isSidebarVisible) {
+                listContainer.classList.add("list-container");
+                listContainer.classList.remove("list-container-hidden");
+                bottomBar.classList.add("input_content");
+                bottomBar.classList.remove("full-width");
+                returnIcon.innerHTML = '<img src="ui_img/back.png" alt="Return Icon" width="30" height="25">';
+            } else {
+                listContainer.classList.add("list-container-hidden");
+                listContainer.classList.remove("list-container");
+                bottomBar.classList.remove("input_content");
+                bottomBar.classList.add("full-width");
+                returnIcon.innerHTML = '<img src="ui_img/list.png" alt="Recommend Icon" width="30" height="25">';
+            }
+        });
     });
-
-
-  </script>
-<!---Merge-->
-
-<script src="/js/app.js"></script>
-<script>
-  const handleKeyDown = (event) => {
-      if (event.key === "Enter") {
-          console.log("Keyboard submit");
-          callAPI();
-      }
-  }
-
-  async function callAPI() {
-      const inputText = document.getElementById('userInput').value;
-      const responseDiv = document.getElementById('response_content');
-      const loadingLabel = document.getElementById('loading-label');
-      if (!inputText) return;// in case user don't submit anything
-
-      loadingLabel.style.display = 'flex';
-
-      try {
-          const response = await fetch('/api', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({inputText}),
-          });
-
-          if (response.ok) {
-              const data = await response.json();
-              console.log('callAPI data', data);
-              responseDiv.innerHTML += `<div class='user_input'><div class="user_input_content">${inputText}</div></div>`;
-              responseDiv.innerHTML += `<div class='server_output'><div class="server_output_content">${data.response}</div></div>`;
-              document.getElementById('userInput').value = "";
-              // Scroll to the bottom
-              const scrollingContainer = document.getElementById('response_content');
-              const newMessage = scrollingContainer.lastElementChild;
-              newMessage.scrollIntoView({ behavior: 'smooth' });
-          } else {
-              console.error('Error:', response.status);
-          }
-      } catch (error) {
-          console.error('Error:', error);
-      } finally {
-          loadingLabel.style.display = 'none';
-      }
-  }
-  //missing the recipe feeding part
 </script>
+<script src="js/app.js"></script>
+
+<script>
+    const handleKeyDown = (event) => {
+        if (event.key === "Enter") {
+            console.log("Keyboard submit");
+            callAPI();
+        }
+    }
+
+    async function callAPI() {
+        const inputText = document.getElementById('userInput').value;
+        const responseDiv = document.getElementById('response_content');
+        // const loadingLabel = document.getElementById('loading-label');
+        if (!inputText) return;// in case user don't submit anything
+
+        // loadingLabel.style.display = 'flex';
+
+        try {
+            const response = await fetch('/api', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({inputText}),
+            });
+
+            console.log(response);
+            if (response.ok) {
+                const data = await response.json();
+                console.log('callAPI data', data);
+                // 将类似于 JSON 的部分提取出来
+                const jsonLikeData = data.response.match(/{(?:[^{}]|{(?:[^{}]|{[^{}]*})*})*}/);
+                const jsonData = JSON.parse(jsonLikeData[0]);
+                console.log(jsonData);
+
+                // 生成展示 HTML
+                const displayHTML = `
+                <p>${jsonData?.comment}</p>
+                <ul>${Object.values(jsonData?.recipes).map(recipe => `
+                    <li>
+            <strong>${recipe?.name.slice(2, -2)}</strong>
+            <ul>
+              <li>Main Medicine: ${recipe['main medicine']}</li>
+              <li>Composition: ${recipe?.composition}</li>
+              <li>Preparation Method: ${recipe?.preparation_method}</li>
+<!--              <li>Efficacy: ${recipe?.efficacy}</li>-->
+<!--               <li>Health Care Application: ${recipe.health_care_application}</li>-->
+<!--               <li><img src="${recipe.image}" alt="${recipe.name}" width="200"></li>-->
+            </ul>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+
+                responseDiv.innerHTML += `<div class='user_input'><div class="user_input_content">${inputText}</div></div>`;
+                // responseDiv.innerHTML += `<div class='server_output'><div class="server_output_content">${data.response}</div></div>`;
+                responseDiv.innerHTML += `<div class='server_output'><div class="server_output_content">${displayHTML}</div></div>`;
+                document.getElementById('userInput').value = "";
+                // Scroll to the bottom
+                const scrollingContainer = document.getElementById('response_content');
+                const newMessage = scrollingContainer.lastElementChild;
+                newMessage.scrollIntoView({behavior: 'smooth'});
+            } else {
+                console.error('Error:', response.status);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        } finally {
+            // loadingLabel.style.display = 'none';
+        }
+    }
+</script>
+
+
 </body>
 
 </html>
