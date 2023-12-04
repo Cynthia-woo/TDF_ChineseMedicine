@@ -1,360 +1,428 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input, button {
+    border: 0;
+    background-color: #fff;
 }
 
 /* Style the body */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #F9F9F9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #F9F9F9;
 }
 
+/* Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 121, 82, 0.5); /* 滑块颜色 */
+    border-radius: 6px; /* 滑块边角弧度 */
+}
+
+
 .navbar {
-  width: 100%;
-  height: 100px;
-  background: #F9F9F9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: #464646;
-  border-width: 2px;
-  border-top: none;
+    width: 100%;
+    height: 100px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px #464646 solid;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-color: #464646;
-  border-width: 2px;
-  border-top: none;
-  border-bottom: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px #464646 solid;
 }
 
 .logo img {
-  width: 42px;
-  height: 42px;
+    width: 42px;
+    height: 42px;
 }
 
 .title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 40px;
-  margin-left: 36px;
-  flex-grow: 1;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    margin-left: 36px;
+    flex-grow: 1;
 }
 
 .return-icon {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left-style: solid;
-  border-color: #464646;
-  border-width: 2px;
-  border-top: none;
-  border-bottom: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px #464646 solid;
 }
 
 .return-icon:hover {
-  background-color: #ECECEC;
-  border-style: solid;
-  border-color: #464646;
-  border-width: 2px;
-  border-top: none;
-  border-right: none;
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    border: 2px #464646 solid;
+    border-right:none;
 }
 
 .return-icon img {
-  width: 30px;
-  height: 25px;
+    width: 30px;
+    height: 25px;
 }
 
 .list-container {
-  width: 440px;
-  height: calc(100vh - 100px);
-  /* 计算列表区域高度 */
-  background-color: #f3f3f3;
-  float: right;
-  /* 右侧浮动 */
-  border-left: 2px solid #464646;
-  border-bottom: 2px solid #464646;
-  box-sizing: border-box;
+    width: 440px;
+    height: calc(100vh - 100px);
+    /* 计算列表区域高度 */
+    background-color: #f3f3f3;
+    float: right;
+    /* 右侧浮动 */
+    border-left: 2px solid #464646;
+    border-bottom: 2px solid #464646;
+    box-sizing: border-box;
 }
 
 .list-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 28px;
-  padding-left: 50px;
-  height: 100px;
-  line-height: 100px;
-  border-bottom: 2px solid #464646;
-  margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    padding-left: 50px;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #464646;
+    margin: 0;
 }
 
 .list-item {
-  /* font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  padding-left: 0px; */
-  /* 调整图标宽度后的左侧间距 */
-  height: 100px;
-  line-height: 100px;
-  border-bottom: 2px solid #464646;
-  cursor: pointer;
-  transition: height 0.4s ease;
-  overflow: hidden;
-  /* background-image: url('tea1.png'); */
-  /* 替换成您的图标路径 */
-  /* background-size: 24px 27px;
-  /* 设置图标大小 */
-  /* background-repeat: no-repeat;
-  background-position: 50px center; */
-  /* 调整图标位置 */
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 0px; */
+    /* 调整图标宽度后的左侧间距 */
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #464646;
+    cursor: pointer;
+    transition: height 0.4s ease;
+    overflow: hidden;
+    /* background-image: url('tea1.png'); */
+    /* 替换成您的图标路径 */
+    /* background-size: 24px 27px;
+    /* 设置图标大小 */
+    /* background-repeat: no-repeat;
+    background-position: 50px center; */
+    /* 调整图标位置 */
 }
 
 .original-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  padding-left: 80px;
-  /* 调整图标宽度后的左侧间距 */
-  /* height: 100px;
-  line-height: 100px;
-  border-bottom: 2px solid #464646;
-  cursor: pointer;
-  transition: height 0.4s ease; */
-  overflow: hidden;
-  /* background-image: url('tea1.png'); */
-  /* 替换成您的图标路径 */
-  background-size: 24px 27px;
-  /* 设置图标大小 */
-  background-repeat: no-repeat;
-  background-position: 50px center;
-  /* 调整图标位置 */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 80px;
+    /* 调整图标宽度后的左侧间距 */
+    /* height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #464646;
+    cursor: pointer;
+    transition: height 0.4s ease; */
+    overflow: hidden;
+    /* background-image: url('tea1.png'); */
+    /* 替换成您的图标路径 */
+    background-size: 24px 27px;
+    /* 设置图标大小 */
+    background-repeat: no-repeat;
+    background-position: 50px center;
+    /* 调整图标位置 */
 }
 
+.main_container {
+    border-left: 2px #464646 solid;
+    border-right: 2px #464646 solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_container {
+    position: relative;
+}
+
+
 .list-item.expand .original-text {
-  display: none;
+    display: none;
 }
 
 .list-item.expand .item-content {
-  display: block;
-  text-align: center;
-  padding: 0;
-  border-style: 2px solid black;
-  justify-content: center;
-  align-items: center;
-  /* 上下各添加50px的内部填充 */
+    display: block;
+    text-align: center;
+    padding: 0;
+    /*border: 2px black solid;*/
+    justify-content: center;
+    align-items: center;
+    /* 上下各添加50px的内部填充 */
 }
 
 .list-item.expand .item-content img {
-  width: auto;
-  /* 图片宽度填满父容器 */
-  height: 100%;
-  /* 保持原比例 */
-  max-width: 100%;
-  /* 防止图片超出父容器 */
-  max-height: 100%;
-  /* 防止图片超出父容器 */
-  display: inline-block;
-  /* 以行内块元素显示，使其水平居中 */
-  vertical-align: middle;
-  /* 垂直居中 */
+
+    width: auto;
+    /* 图片宽度填满父容器 */
+    height: 100%;
+    /* 保持原比例 */
+    max-width: 100%;
+    /* 防止图片超出父容器 */
+    max-height: 100%;
+    /* 防止图片超出父容器 */
+    display: inline-block;
+    /* 以行内块元素显示，使其水平居中 */
+    vertical-align: middle;
+    /* 垂直居中 */
 }
 
 .list-item.expand .item-text {
-  display: none;
-  /* 隐藏原文字和小图标 */
+    display: none;
+    /* 隐藏原文字和小图标 */
 }
 
 #first {
-  height: calc(100vh - 300px);
+    height: calc(100vh - 300px);
 }
 
 .list-item:hover {
-  background-color: #ECECEC;
+    background-color: #ECECEC;
 }
 
 .list-item.expand {
-  height: calc(100vh - 400px);
-  background: #ECECEC;
-  font-family: 'DM Serif Display', serif;
-  /* 展开高度 */
+    height: calc(100vh - 400px);
+    background: #ECECEC;
+    font-family: 'DM Serif Display', serif;
+    /* 展开高度 */
 }
 
 .item-content {
-  display: none;
-  padding: 0;
+    display: none;
+    padding: 0;
 }
 
 .item-icon1 {
-  background-image: url('tea1.png');
+    background-image: url('ui_img/tea1.png');
 }
 
 .item-icon2 {
-  background-image: url('tea2.png');
+    background-image: url('ui_img/tea2.png');
 }
 
 .item-icon3 {
-  background-image: url('tea3.png');
+    background-image: url('ui_img/tea3.png');
 }
 
 .input_content {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: calc(100% - 440px);
-  /* 计算剩余宽度 */
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  padding-left: 24px;
-  border-top: 2px solid #464646;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+    /*box-sizing: border-box;*/
+    border-top: 2px #464646 solid;
+    border-bottom: 2px #464646 solid;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #464646;
 }
 
-.userInput {
-  flex-grow: 1;
-  height: 100px;
-  border: none;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+#userInput {
+    /*flex-grow: 1;*/
+    display: block;
+    height: 102px;
+    width: calc(100% - 102px);;
+    border-top: 2px #464646 solid;
+    border-bottom: 2px #464646 solid;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 50px;
 }
 
-.userInput_button {
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: none;
-  /* border-left-color: #464646; */
-  padding: 0;
+#userInput_button {
+    width: 102px;
+    height: 102px;
+    display: block;
+    background: url("./ui_img/send.png");
+    background-size: cover;
+    border-top: 2px #464646 solid;
+    border-bottom: 2px #464646 solid;
+    box-sizing: border-box;
+    padding: 0;
 }
-  /* TODO fix the btn img*/
-.userInput_button img {
-  width: 100%;
-  height: 100%;
+
+/* TODO fix the btn img*/
+.userInput_button > img {
+    width: 100%;
+    height: 100%;
+}
+
+.response_container {
+    height: calc(100vh - 100px);
+    padding: 30px 100px;
+    /*height: 800px;*/
+}
+
+#response_content {
+    height: 50%;
+    position: relative;
+    overflow: auto;
+}
+
+
+.server_output, .user_input {
+    position:relative;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.user_input {
+    align-items: end;
+    justify-content: right;
+}
+
+.server_output_content, .user_input_content {
+    padding: 24px;
+    background-color: #F3F3F3;
+    color: #464646;
+    max-width: 80%;
+    border: 2px #464646 solid;
+}
+
+.user_input_content {
+    text-align: right;
+    background-color: #fff;
+}
+
+
+.server_output_animation {
+    height: 300px;
+    transform: translateX(-100px) translateY(-100px);
 }
 
 .animated-image {
-  position: absolute;
-  top: calc(100px + 50px);
-  left: 50px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
+    position: absolute;
+    top: calc(100px + 50px);
+    left: 50px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .animated-image2 {
-  position: absolute;
-  top: calc(100px + 50px);
-  left: 180px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards, moveAround 4s ease-in-out infinite alternate;
+    position: absolute;
+    top: calc(100px + 50px);
+    left: 180px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards, moveAround 4s ease-in-out infinite alternate;
 }
 
 .animated-image3 {
-  position: absolute;
-  top: calc(200px + 70px);
-  left: 70px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards, moveAround2 4s ease-in-out infinite alternate;
+    position: absolute;
+    top: calc(200px + 70px);
+    left: 70px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards, moveAround2 4s ease-in-out infinite alternate;
 }
 
 .animated-image4 {
-  position: absolute;
-  top: 240px;
-  left: 280px;
-  opacity: 0;
-  animation: slideInRight 1.5s ease-in-out forwards;
-  animation-delay: 1.5s;
+    position: absolute;
+    top: 240px;
+    left: 280px;
+    opacity: 0;
+    animation: slideInRight 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
 
 .animated-image5 {
-  position: absolute;
-  top: 150px;
-  left: 170px;
-  opacity: 0;
-  animation: slideInRight 1.5s ease-in-out forwards;
-  animation-delay: 1.5s;
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    opacity: 0;
+    animation: slideInRight 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes moveAround {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  25% {
-    transform: translate(6px, -3px);
-  }
+    25% {
+        transform: translate(6px, -3px);
+    }
 
-  50% {
-    transform: translate(0, 0);
-  }
+    50% {
+        transform: translate(0, 0);
+    }
 
-  75% {
-    transform: translate(-2px, 4px);
-  }
+    75% {
+        transform: translate(-2px, 4px);
+    }
 
-  100% {
-    transform: translate(0, 0);
-  }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes moveAround2 {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  20% {
-    transform: translate(-4px, -3px);
-  }
+    20% {
+        transform: translate(-4px, -3px);
+    }
 
-  40% {
-    transform: translate(2px, 4px);
-  }
+    40% {
+        transform: translate(2px, 4px);
+    }
 
-  60% {
-    transform: translate(7px, 0px);
-  }
+    60% {
+        transform: translate(7px, 0px);
+    }
 
-  80% {
-    transform: translate(3px, -3px);
-  }
+    80% {
+        transform: translate(3px, -3px);
+    }
 
-  100% {
-    transform: translate(0, 0);
-  }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

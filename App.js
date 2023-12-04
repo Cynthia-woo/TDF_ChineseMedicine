@@ -14,7 +14,7 @@ app.use(express.static(publicPath));
 
 // Serve the HTML file for the root route
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "/"));
 });
 
 // Handle the API request
@@ -25,18 +25,20 @@ app.post("/api", async (req, res) => {
         const session_id = req.body.session_id; // Optional session_id
         const stateful = req.body.stateful; // Optional stateful flag
 
+        console.log('app/js-handler');
+
         const apiResponse = await callZeroWidthAPI(inputText, user_id, session_id, stateful);
 
         if (apiResponse && apiResponse.output_data && apiResponse.output_data.content) {
             const responseText = apiResponse.output_data.content;
-            res.json({ response: responseText });
+            res.json({response: responseText});
         } else {
             console.error('Invalid API Response Format:', apiResponse);
-            res.status(500).json({ error: 'Invalid API response format' });
+            res.status(500).json({error: 'Invalid API response format'});
         }
     } catch (error) {
         console.error("Error in API request:", error);
-        res.status(500).json({ error: error.message });
+        res.status(500).json({error: error.message});
     }
 });
 
@@ -53,8 +55,8 @@ async function callZeroWidthAPI(inputText, user_id, session_id, stateful) {
                     role: "user",
                 },
             ],
-            variables:{
-                "AGE_OF_USER":""
+            variables: {
+                "AGE_OF_USER": ""
             },
         },
         user_id: user_id, // Optional user_id
