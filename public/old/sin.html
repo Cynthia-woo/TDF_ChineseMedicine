@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    #MyCanvasWrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100px; /* 设置 Canvas 包裹容器的宽度 */
+      height: 200px; /* 设置 Canvas 包裹容器的高度 */
+      margin: 0 auto; /* 居中显示 */
+    }
+    #MyCanvas {
+      background-color: rgba(255, 255, 255, 0.07);
+      position: absolute;
+      animation: moveLeft 60s linear infinite;
+    }
+    @keyframes moveLeft {
+      0% {
+        transform: translateX(0); /* 初始位置 */
+      }
+      100% {
+        transform: translateX(-100%); /* 移动到容器左侧之外 */
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    var i = 1;
+    var x = 1;
+    var y = 100;
+    function moveSin(){
+      var my_canvas = document.getElementById( "MyCanvas" );
+      var content = my_canvas.getContext( "2d" );
+
+
+      content.beginPath();
+      content.strokeStyle = "orange"; // 设置画笔颜色为橙色
+      content.moveTo( x, y );
+      i += 0.1;
+      x = i * 2;
+      y = Math.sin( i ) * 20 + 100;
+      content.lineTo( x, y );
+      content.stroke();
+      content.closePath();
+    }
+    setInterval( moveSin, 10 );
+  </script>
+</head>
+<body οnlοad="moveSin()">
+<div id="MyCanvasWrapper">
+  <canvas id="MyCanvas"></canvas>
+</div>
+</body>
+</html>

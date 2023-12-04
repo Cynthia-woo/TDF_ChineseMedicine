@@ -23,12 +23,12 @@
     <div class="title">
         <p>Chinese MediDish</p>
     </div>
-    <div class="return-icon">
+    <div class="return-icon" id="returnIcon">
         <img src="ui_img/back.png" alt="Return Icon" width="30" height="25">
     </div>
 </div>
 <div class="main_container">
-    <div class="left_container">
+    <div class="left_container" id="bottomBar">
         <div class="response_container">
             <!--    <div id="loading-label" style="display: none"><img-->
             <!--            src="https://npr.brightspotcdn.com/legacy/sites/nhpr/files/202010/InternetSlowdown_Day.gif"-->
@@ -60,7 +60,7 @@
             <button id="userInput_button" type="submit" onclick="callAPI()"></button>
         </div>
     </div>
-    <div class="right_container">
+    <div class="right_container" id="listContainer">
         <div class="list-container">
             <h2 class="list-title">Recommendations</h2>
             <!-- 列表条目 -->
@@ -115,7 +115,6 @@
 
     const botImage = document.getElementById("botImage");
     const imageSources = ["ui_img/bot.png", "ui_img/bot_eyes_closed.png"];
-    let currentIndex = 0;
 
     setInterval(function () {
         let currentIndex = 0;
@@ -135,7 +134,6 @@
     document.addEventListener("DOMContentLoaded", function () {
         const returnIcon = document.getElementById("returnIcon");
         const listContainer = document.getElementById("listContainer");
-        const bottomBar = document.getElementById("bottomBar");
 
         let isSidebarVisible = true;
 
@@ -143,22 +141,16 @@
             isSidebarVisible = !isSidebarVisible;
 
             if (isSidebarVisible) {
-                listContainer.classList.add("list-container");
-                listContainer.classList.remove("list-container-hidden");
-                bottomBar.classList.add("input_content");
-                bottomBar.classList.remove("full-width");
+                listContainer.style.display = "block";
                 returnIcon.innerHTML = '<img src="ui_img/back.png" alt="Return Icon" width="30" height="25">';
             } else {
-                listContainer.classList.add("list-container-hidden");
-                listContainer.classList.remove("list-container");
-                bottomBar.classList.remove("input_content");
-                bottomBar.classList.add("full-width");
+                listContainer.style.display = "none";
                 returnIcon.innerHTML = '<img src="ui_img/list.png" alt="Recommend Icon" width="30" height="25">';
             }
         });
     });
 </script>
-<script src="js/app.js"></script>
+<script src="../App.js"></script>
 
 <script>
     const handleKeyDown = (event) => {
@@ -170,6 +162,7 @@
 
     async function callAPI() {
         const inputText = document.getElementById('userInput').value;
+        console.log(inputText);
         const responseDiv = document.getElementById('response_content');
         // const loadingLabel = document.getElementById('loading-label');
         if (!inputText) return;// in case user don't submit anything
@@ -191,8 +184,13 @@
                 console.log('callAPI data', data);
                 // 将类似于 JSON 的部分提取出来
                 const jsonLikeData = data.response.match(/{(?:[^{}]|{(?:[^{}]|{[^{}]*})*})*}/);
-                const jsonData = JSON.parse(jsonLikeData[0]);
-                console.log(jsonData);
+
+                const jsonData = jsonLikeData ? JSON.parse(jsonLikeData[0]) : data.response;
+                console.log('json data',jsonData);
+
+                var displayHTML =  jsonData;
+                if (jsonData !== data.response) {
+
 
                 // 生成展示 HTML
                 const displayHTML = `
@@ -211,7 +209,7 @@
           </li>
         `).join('')}
       </ul>
-    `;
+    `;}
 
                 responseDiv.innerHTML += `<div class='user_input'><div class="user_input_content">${inputText}</div></div>`;
                 // responseDiv.innerHTML += `<div class='server_output'><div class="server_output_content">${data.response}</div></div>`;
