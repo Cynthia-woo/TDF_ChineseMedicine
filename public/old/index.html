@@ -18,7 +18,8 @@
 
 </header>
 <!--    Recipe Feed Section -->
-<div id="recipe-container"></div>
+<div id="recrecipes-container"></div>
+<!--    chatbox Session -->
 <div class="response_container">
     <div id="loading-label" style="display: none"><img
             src="https://npr.brightspotcdn.com/legacy/sites/nhpr/files/202010/InternetSlowdown_Day.gif"
@@ -30,6 +31,7 @@
 
     </div>
 </div>
+
 <footer>
     <div class="input_content" onkeydown="handleKeyDown(event)">
         <input id="userInput" type="text" placeholder="Ask everything here"/>
@@ -91,7 +93,7 @@
         .then(data => {
             const allRecipes = data.recipes; // Accessing the recipes array in the JSON
             const selectedRecipes = selectRandomRecipes(allRecipes, 3); // Change to how many recipes we want to display
-            const container = document.getElementById('recipe-container');
+            const container = document.getElementById('recrecipes-container');
             selectedRecipes.forEach(recipe => {
                 const recipeElement = document.createElement('div');
                 recipeElement.className = 'recipe';
